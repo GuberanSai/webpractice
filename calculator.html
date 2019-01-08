@@ -1,0 +1,54 @@
+    <!DOCTYPE html>
+<html>
+    <head>
+    <title>CALC</title>
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+            
+        <div class="container">
+            <h1>CALCULATOR</h1>
+             <div class="cal-body">
+                <form name="calc">
+                    <table>
+                        <tr>
+                            <td colspan="5">
+                                    <input type="text" name="display" id="display" disabled>
+                                </td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="button" name="seven" value="7" onclick="disp('7')"></td>
+                            <td><input type="button" name="eight" value="8" onclick="disp('8')"></td>
+                            <td><input type="button" name="nine" value="9" onclick="disp('9')"></td>
+                            <td><input type="button" class="operator" name="divide" value="/" onclick="disp('/')"></td>
+                        </tr>
+
+                         <tr>
+                             <td><input type="button" name="six" value="6" onclick="disp('6')"></td>
+                            <td><input type="button" name="five" value="5" onclick="disp('5')"></td>
+                            <td><input type="button" name="four" value="4" onclick="disp('4')"></td>
+                            <td><input type="button" class="operator" name="multiply" value="*" onclick="disp('*')"></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="button" name="one" value="1" onclick="disp('1')"></td>
+                            <td><input type="button" name="two" value="2" onclick="disp('2')"></td>
+                            <td><input type="button" name="three" value="3" onclick="disp('3')"></td>
+                            <td><input type="button" class="operator" name="minus" value="-" onclick="disp('-')"></td>
+                        </tr>
+
+                         <tr>
+                            <td><input type="button" id="clear" name="clear" value="c" onclick="clr()"></td>
+                            <td><input type="button" name="zero" value="0" onclick="disp('0')"></td>
+                            <td><input type="button" name="do" value="=" onclick="solve()"></td>
+                            <td><input type="button" class="operator" name="plus" value="+" onclick="disp('+')"></td>
+                            </tr> 
+                    </table>
+                </form>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
